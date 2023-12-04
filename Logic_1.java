@@ -40,6 +40,7 @@ public class Logic_1 {
   }
 
   public static boolean lessBy10(int a, int b, int c) {
+    //if any of them are true 
     return (Math.abs(a - b) >= 10 || Math.abs(c - b) >= 10 || Math.abs(a - c) >= 10);
   }
 
