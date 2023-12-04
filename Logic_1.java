@@ -13,12 +13,12 @@ public class Logic_1 {
     int x = a + b;
     if (x >= 10 && x <= 19)
       return 20;
-    return x;
+    else
+      return x;
   }
 
   // define your methods here
   public static boolean in1To10(int n, boolean outsideMode) {
-
     if (outsideMode) {
       return (n <= 1 || n >= 10);
     } else {
@@ -63,18 +63,17 @@ public class Logic_1 {
   }
 
   public static String alarmClock(int day, boolean vacation) {
-    if(day==6||day==0){
-        if(vacation)
+    if (day == 6 || day == 0) {
+      if (vacation)
         return "off";
-        else
+      else
         return "10:00";
-    }else{
-        if(vacation)
+    } else {
+      if (vacation)
         return "10:00";
-        else
+      else
         return "7:00";
     }
   }
-  
 
 }
